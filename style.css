@@ -1,0 +1,642 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    font-family:'Work Sans', sans-serif;
+}
+ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+/*header-pocetak*/
+#logo h1 a,.braon a,.blokovi-proizvodi h3,.button2 p a,#blok-kontakt h2,#bolk-ponuda h3,.blok-o-nama h2,#naslov,
+#O-autoru h2,.sadrzaj-autora ul li span{
+    color:#706233;
+ }
+ nav ul li a{
+    color:#000;
+ }
+ #logo h1 a{
+    font-family: 'Lobster', sans-serif;
+ }
+ nav ul li a::after{
+    content: "";
+    position:absolute;
+    background-color: #B0926A;
+    height: 3px;
+    width: 0;
+    left:0;
+    bottom: -10px;
+ }
+ nav ul li a:hover::after{
+    width: 100%;
+ }
+ nav ul li a{
+    position: relative;
+ }
+.di-flex{
+    display: flex;
+}
+.space-between{
+    justify-content: space-between;
+}
+.align-items{
+    align-items: center;
+}
+nav ul li{
+    padding: 0px 15px;
+    font-size: 18px;
+    font-weight: bold;
+}
+nav ul li:last-child{
+    padding-right:100px;
+}
+nav ul li:first-child{
+    color: #B0926A;
+}
+header{
+    padding: 30px 50px;
+}
+#logo{
+    width: 30%;
+}
+.logo-slika{
+    background-image:url(../img/logo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 30px;
+    width: 15%;
+    padding-bottom: 23px;
+    margin-right: 20px;
+}
+#meni{
+    width: 60%;
+}
+/*header-kraj*/
+/*Pocetak main-slike*/
+#cover{
+    position: relative;
+}
+#main-slika{
+    background-image:url(../img/main-img.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    height: 500px;
+}
+.boja{
+    width: 100%;
+    height: 500px;
+    background-image:linear-gradient(to top,#B0926A,transparent);
+    position: absolute;
+}
+#beli-blok{
+    width: 500px;
+    height: 300px;
+    border-radius: 7%;
+    background-color: white;
+    opacity: 0.9;
+    position: absolute;
+    left:50px;
+    top:100px;
+}
+#beli-blok h2{
+    font-size: 50px;
+    text-align: center;
+    padding: 60px 10px 0px 10px;
+    font-family: 'Lobster', sans-serif;
+    color:#B0926A;
+    animation: sideleft 1s linear forwards;
+}
+@keyframes sideleft{
+    0%{
+        transform: translate(50px);
+        opacity: 0;
+    }
+    100%{
+        transform: translate(0px);
+        opacity: 1;
+    }
+}
+#button{
+    margin-left: 170px;
+    margin-right: 180px;
+    margin-top: 30px;
+}
+#button p{
+    text-align: center;
+    padding: 15px 10px;
+    color: #fff;
+    background-color: #706233;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+#button p:hover{
+    color: #706233;
+    font-weight: bold;
+    background-color: #fff;
+    border: 2px solid #706233;
+    transition: 0.5s;
+    border-radius: 20%;
+    text-transform: uppercase;
+}
+/*Krajmain-slike*/
+/*Blok-sta nudimo*/
+#bolk-ponuda h3{
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size:34px ;
+    padding: 50px 0px;
+}
+#bolk-ponuda{
+    padding-bottom:30px;
+}
+.sadrzaj-nastanka{
+    position: absolute;
+    top: 0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor:pointer;
+    opacity: 0;
+}
+.podnaslov{
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+} 
+.blokovi-nastanka{
+    position: relative;
+    width: 32%;
+    text-align: center;
+    box-shadow: 0 10px 20px rgba(40,40,40,0.4);
+}
+.blokovi-nastanka:hover .sadrzaj-nastanka{
+    transition: 1s;
+    opacity: 1;
+}
+.slika-nastanka01{
+    background-image: url(../img/plantaza.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+}
+.slika-nastanka02{
+    background-image: url(../img/obrada.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+}
+.slika-nastanka03{
+    background-image: url(../img/usluga.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+}
+
+/*Kraj-bloka*/
+/*Cover za citat*/
+#blok-citat{
+    position: relative;
+}
+.boja2{
+    background-image:linear-gradient(rgba(0,0,0,0.7),transparent);
+    height: 400px;
+    width: 100%;
+    position: absolute;
+}
+.citat-slika{
+    margin:30px 0px;
+    background-image: url(../img/cover-slika-za-citat.jpg);
+    height: 400px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+.blok-sadrzaj-citat{
+    color: #fff;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+.blok-sadrzaj-citat h3{
+    font-weight: bold;
+    font-size:50px;
+    padding: 175px;
+    font-family: 'Lobster', sans-serif;
+}
+/*Kraj-cover za citat*/
+/*Blokovi-proizvoda*/
+.blokovi-proizvodi{
+    padding: 20px 0px;
+}
+.centriranje{
+    width: 90%;
+    margin: 0px auto;
+}
+.blokovi-proizvodi h3{
+    text-align: center;
+    padding-bottom: 35px;
+    font-size: 34px;
+    text-transform: uppercase;
+}
+.blokovi{
+    width: 32%;
+    background-color: #f8f8f9;
+    box-shadow: 0 10px 20px rgba(40,40,40,0.4);
+}
+.sadrzaj-bloka{
+    text-align: center;
+    padding: 10px 5px;
+    animation: sideleft 1s linear forwards;
+}
+.sadrzaj-bloka h4{
+    padding-bottom: 10px;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bolder;
+    padding-top: 10px;
+}
+.sadrzaj-bloka p{
+    line-height: 28px;
+}
+.slika-proizvoda1{
+    background-image: url(../img/filter-kafa.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:75%;
+    height: 185px;
+    margin-left: 45px;
+    margin-top: 25px;
+}
+.slika-proizvoda2{
+    background-image: url(../img/expresso-kafa.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:75%;
+    height: 185px;
+    margin-left: 45px;
+    margin-top: 25px;
+}
+.slika-proizvoda3{
+    background-image: url(../img/kafa\ sa\ mlekom.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:75%;
+    height: 185px;
+    margin-left: 45px;
+    margin-top: 25px;
+}
+.preklapanje:hover{
+    transform: scale(1.25,1.15);
+    transition: 1s;
+    z-index: 2;
+}
+.button2{
+    padding-top: 60px;
+}
+.button2 p{
+    text-align: center;
+}
+.button2 p a{
+    text-align: center;
+    padding: 15px 10px;
+    background-color: #706233;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+}
+.button2 p a:hover{
+    color: #706233;
+    font-weight: bold;
+    background-color: #fff;
+    border: 2px solid #706233;
+    transition: 0.5s;
+    border-radius: 20%;
+    text-transform: uppercase;
+}
+/*Kraj blokovi-proizvoda*/
+/*O-nama sadrzaj*/
+
+#o-nama-pocetna{
+    padding: 40px 0px;
+    color: #fff;
+    margin-top: 20px;
+}
+#o-nama-pocetna h2{
+    font-weight: bold;
+    font-size:34px;
+    padding-top: 30px;
+    padding-bottom: 18px;
+    text-transform: uppercase;
+}
+#o-nama-pocetna p{
+    line-height: 28px;
+}
+.pozadina{
+    background-color: #1d140b;
+}
+/*Kraj O-nama sadrzaj*/
+/*Kontak-pocetna*/
+#blok-kontakt{
+    margin-top: 60px ;
+    margin-bottom: 60px;
+}
+#blok-kontakt h2{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 34px;
+    padding-bottom: 58px;
+}
+.dva-bloka{
+    margin-top: 20px;
+    width: 45%;
+    background-color: #f8f8f9;
+    box-shadow: 0 10px 20px rgba(40,40,40,0.4);
+    padding:60px 25px 30px 20px;
+    position: relative;
+}
+.sadrzaj-kontakt h3{
+    padding-bottom: 10px;
+    font-weight: bold;
+    font-size: 22px;
+    padding-left:15px;
+}
+.sadrzaj-kontakt p{
+    line-height: 28px;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+.slika-kontakt1{
+    background-image: url(../img/women-portret.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    border-radius: 100%;
+    width: 100px;
+    height: 100px;
+    top:-50px;
+    left:25px;
+}
+.slika-kontakt2{
+    background-image: url(../img/men-portret.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    border-radius: 100%;
+    width: 100px;
+    height: 100px;
+    top:-50px;
+    left:25px;
+}
+/*Kraj Kontak-pocetna*/
+/*footer*/
+footer{
+    margin-top: 20px;
+    padding: 40px 0px;
+    color: #fff;
+}
+footer h2{
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    padding-bottom: 35px;
+}
+.sadrzaj-footer h3{
+    padding-bottom:15px ;
+    text-transform: uppercase;
+}
+.sadrzaj-footer ul li a i{
+    padding-right: 17px;
+    color: white;
+    font-size: 20px;
+}
+.sadrzaj-footer ul li a i:hover{
+    color:#706233;
+    transition: 1s;
+}
+.kraj{
+    text-align: center;
+    padding-top:50px ;
+}
+/*Kraj footer*/
+/*Stranica O-nama*/
+.blok-o-nama h2{
+    padding:10px 0px 50px 0px;
+    text-align: center;
+    font-size: 34px;
+    font-weight: bold;
+}
+.sadrzaj-bloka-o-nama{
+    width: 50%;
+    padding: 20px 50px;
+    color: #fff;
+}
+.boja3{
+    background-color: #1d140b;
+}
+.sadrzaj-bloka-o-nama h3{
+    padding-bottom:20px;
+    padding-top: 100px;
+    font-size: 22px;
+}
+.sadrzaj-bloka-o-nama p{
+    line-height:28px;
+    padding-bottom: 25px;
+}
+.slika1-o-nama{
+    background-image: url(../img/prva-slika-o-nam-strane.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 450px;
+    width: 50%;
+}
+.slika2-o-nama{
+    background-image: url(../img/druga-slika-o-nama-stranici.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 450px;
+    width: 50%;
+}
+/*Kraj stranice O-nama*/
+/*Stranica Prodaja*/
+.padding{
+    padding-bottom:60px ;
+}
+#naslov h2{
+    padding:10px 0px 30px 0px;
+    font-size: 34px;
+    text-align: center;
+    font-weight: bold;
+}
+.citat-slika2{
+    margin:50px 0px;
+    background-image: url(../img/silka-citat-proizvodi.jpg);
+    height: 400px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+.slika-proizvoda4{
+    background-image: url(../img/ledena-kafa.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:75%;
+    height: 185px;
+    margin-left: 45px;
+    margin-top: 25px;
+}
+.slika-proizvoda5{
+    background-image: url(../img/americano.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:75%;
+    height: 185px;
+    margin-left: 45px;
+    margin-top: 25px;
+}
+.slika-proizvoda6{
+    background-image: url(../img/irska-kafa.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:75%;
+    height: 185px;
+    margin-left: 45px;
+    margin-top: 25px;
+}
+/*Kraj stranice prodaja*/
+/*Stranica Kontakt*/
+.forma h2{
+    padding-top: 30px;
+    text-align: center;
+    font-size: 34px;
+    font-weight: bold;
+    padding-bottom: 60px;
+    color: #fff;
+}
+.forma{
+    background-image: linear-gradient(rgba(0,0,0,0.2),#000), url(../img/slika-za-kontakt.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+form{
+    width: 60%;
+    animation: sideleft 1s linear forwards;
+}
+.grupe-forme{
+    margin-bottom: 30px;
+    position: relative;
+}
+input,textarea{
+    width: 100%;
+    padding: 10px;
+    border: solid 1px #fff;;
+    color: #fff;
+    font-size: 15px;
+    background: transparent;
+}
+label{
+    height: 100%;
+    position: absolute;
+    left: 0px;
+    top:0px;
+    padding: 10px;
+    cursor: text;
+    color: #fff;
+}
+button{
+    padding: 10px 0px;
+    outline: none;
+    border: 1px solid #fff;
+    width: 100%;
+    cursor: pointer;
+    color: #fff;
+    font-size: 15px;
+    background: transparent;
+}
+.isti-red{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.isti-red .grupe-forme{
+    width: 48%;
+}
+.margin-50{
+    margin-bottom: 50px;
+}
+input:valid~label,textarea:valid~label{
+    top: -35px;
+    font:14px;
+}
+/*Kraj stranice kontakt*/
+/*Pocetak stranice autor*/
+.centriranje2{
+    width: 70%;
+    margin:0px auto;
+}
+#O-autoru h2{
+    padding:10px 0px 30px 0px;
+    font-size: 34px;
+    text-align: center;
+    font-weight: bold;
+}
+#O-autoru {
+    margin-bottom: 30px;
+    background-color: linear-gradient(rgba(0,0,0,0.2),#000);
+}
+.slika{
+    width: 30%;
+}
+.slika-autora{
+    background-image: url(../img/Urednik.jpg);
+    background-position: top center;
+    background-repeat:no-repeat;
+    background-size: cover;
+    height: 400px;
+    box-shadow: 0 10px 20px rgba(40,40,40,0.4);
+    border-radius: 10px;
+}
+.sadrzaj-autora{
+    width: 62%;
+    animation: sideleft 1s linear forwards;
+}
+.sadrzaj-autora h3{
+    padding-bottom: 20px;
+    font-weight: bold;
+    font-size: 24px;
+}
+.sadrzaj-autora ul li{
+    padding-bottom: 10px;
+}
+.sadrzaj-autora ul li span{
+    font-weight: bold;
+}
+/*Kraj stranice autor*/
